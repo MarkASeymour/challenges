@@ -1,0 +1,339 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&family=Ubuntu+Condensed&display=swap");
+
+$color-red: #ef3e42;
+$color-gray: #777;
+$color-blue: #332982;
+
+$font-family-primary: "Ubuntu Condensed", sans-serif;
+$font-family-secondary: "Roboto", sans-serif;
+
+$font-size-h1: 60px;
+$font-family-h1: $font-family-primary;
+$font-weight-h1: 300;
+
+$font-size-h2: 20px;
+$font-family-h2: $font-family-secondary;
+$font-weight-h2: bold;
+
+#co-site {
+    padding-left: 0.5vw;
+    font-stretch: condensed;
+    color: white;
+    font-size: 2rem;
+}
+
+//  header styling
+
+.nav-link {
+    color: white;
+    padding-top: 1.2rem;
+    font-weight: bolder;
+    font-stretch: condensed;
+    font-family: $font-size-h1;
+}
+.nav-link :hover {
+    color: white;
+}
+
+#header {
+    background-color: $color-red;
+    color: white;
+    padding-left: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0;
+    font-family: $font-family-primary;
+}
+
+#header-menu {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+    justify-content: right;
+}
+#header-menu :hover {
+    color: white;
+}
+@media (min-width: 1045) {
+    #header {
+        align-items: center;
+    }
+}
+
+//**  main photo styling
+
+#adopt-now-section {
+    font-family: $font-family-primary;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#adopt-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: 33%;
+}
+
+#adopt-now-btn {
+    border: solid 0.1rem white;
+    max-width: 7rem;
+    border-radius: 0;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+#adopt-now-content {
+    color: white;
+    font-stretch: extra-condensed;
+    font-weight: lighter;
+    padding: 0;
+    font-size: auto;
+}
+
+#adopt-now-stripe {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    max-height: 100%;
+}
+@media (min-width: 426px) {
+    #adopt-now-stripe {
+        font-size: 9px;
+    }
+}
+
+#inset-body {
+    padding-top: 1.5rem;
+    padding-left: 10%;
+    padding-right: 7%;
+    height: auto;
+}
+
+//**  volunteer section
+
+#volunteers-tab {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#volunteers-header {
+    background-color: #332982;
+    color: white;
+    font-weight: bold;
+    font-family: $font-family-primary;
+}
+
+#volunteer-img {
+    width: 100%;
+    height: auto;
+}
+
+#volunteers-text {
+    color: $color-gray;
+    font-size: 0.95rem;
+    font-family: $font-family-secondary;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#join-us-btn {
+    border: solid #332982 0.2rem;
+    border-radius: 0;
+    color: #332982;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: $font-family-primary;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1210px) {
+    #volunteers-text {
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 3.5rem;
+        font-size: 1rem;
+    }
+
+    #join-us-btn {
+        margin-top: 1rem;
+    }
+}
+
+.card-body {
+    padding: 0;
+}
+
+//** testimonial section
+
+#testimonial-tab {
+    font-family: $font-family-primary;
+    padding: 0;
+    padding-left: 1.5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 575px) {
+    #testimonial-tab {
+        padding: 0;
+    }
+}
+
+#testimonial-header {
+    background-color: $color-red;
+    color: white;
+    font-weight: bold;
+}
+
+#testimonial-img {
+    width: 100%;
+    height: auto;
+}
+
+#testimonial-text {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    color: white;
+}
+
+//** tabs section
+#program-company-selection {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    padding-right: 0;
+    padding-left: 0;
+    outline: none;
+    font-family: $font-family-primary;
+}
+
+@media (min-width: 760px) {
+    #program-company-selection {
+        padding-top: 4rem;
+    }
+}
+
+.nav-tabs .nav-link.active {
+    color: #483f8f;
+}
+
+.nav-tabs .nav-link {
+    color: $color-gray;
+}
+
+#tab-row {
+    margin-bottom: 1rem;
+}
+
+#tab-img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: contain;
+    min-width: 10rem;
+    min-height: 10rem;
+    object-position: 20% 50%;
+}
+
+#tab-body {
+    color: $color-red;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+#tab-text {
+    color: $color-gray;
+    font-family: $font-family-h2;
+    font-size: 0.85rem;
+}
+
+#tab-btn {
+    border: solid $color-red 0.2rem;
+    border-radius: 0;
+    color: $color-red;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1.4rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 1020px) {
+    #adopt-me-dog {
+        width: 100%;
+        height: auto;
+        padding-top: 10rem;
+    }
+}
+
+//**  footer section
+
+#footer {
+    border-top: solid $color-red 0.3rem;
+    background-color: #332982;
+    color: white;
+    padding-left: 10%;
+    padding-right: 7%;
+    margin-top: 2rem;
+    overflow: hidden;
+    font-family: $font-family-primary;
+}
+
+#footer-content,
+.push {
+    height: 1%;
+}
+
+#footer-branding {
+    padding-top: 3rem;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+#footer-menu {
+    padding-right: 1rem;
+    color: white;
+}
+#footer-menu :hover {
+    color: white;
+}
+
+.address {
+    margin: 0;
+}
+
+#credit {
+    font-size: 0.7rem;
+    margin-top: 3rem;
+    padding-bottom: 0rem;
+}
+
+@media (max-width: 760px) {
+    #footer-menu.nav {
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media (min-width: 1020px) {
+    #footer-menu {
+        padding-right: 15rem;
+    }
+
+    #credit {
+        margin-top: 5rem;
+        padding-bottom: 0rem;
+    }
+}
